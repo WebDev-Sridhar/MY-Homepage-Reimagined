@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Home - Reimagined</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+      
+        <div class="nav-left">
+            <a href="#" class="logo">My App</a>
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+        
+        </div>
+    <div class="navmain">
+        <div class="input-bar">
+            <input type="text" placeholder="Search for content">
+            <i class='bx bx-search'></i> 
+        </div>
+        <i class='bx bx-menu' id="menu-icon"></i></div>
+        
+        <nav class="navbar">
+            <div class="nav-btn">
+                <a href="#" class="msg"><i class='bx bx-message-square-dots'></i></a>
+                <a href="#" class="notify"><i class='bx bx-bell'></i></a>
+                <a href="#">Settings</a>
+                <a href="#">Profile</a>
+                <button><i class='bx bx-plus-medical'></i> Create</button>
+                <button><i class='bx bx-menu-alt-right'></i> More</button>
+            </div>
+        </nav>
+    </header>
+    
+
+  <main class="content-wrapper">
+    <!-- Left Sidebar -->
+    <aside class="sidebar left">
+      <section class="contacts">
+        <h2>20 Contacts <i class='bx bx-filter-alt'></i><i class="ri-question-fill"></i></h2>
+        <ul>
+          <li><img src="img/profile.avif" alt="profile"> Doe</li>
+          <li><img src="img/profile.avif" alt="profile"> Jane Smith</li>
+          <li><img src="img/profile.avif" alt="profile"> Robert Brown</li>
+        </ul>
+      <p class="showall">Show All</p>
+      </section>
+<hr>
+      <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><img src="img/projects.webp" alt="logo"> Weather App<i class='bx bx-cog' ></i></li>
+          <li><img src="img/projects.webp" alt="logo"> Movie Explorer<i class='bx bx-cog' ></i></li>
+          <li><img src="img/projects.webp" alt="logo"> E-commerce Site<i class='bx bx-cog' ></i></li>
+        </ul><p class="showall">Show All</p>
+        <button>Add New Project</button>
+      
+      </section>
+      <hr>
+      <section class="album">
+        <h2>Album</h2>
+        <ul>
+          <li><img src="img/album.png" alt="logo"> Partners</li>
+          <li><img src="img/album.png" alt="logo"> Portfolios</li>
+          <li><img src="img/album.png" alt="logo"> Project K</li>
+        </ul>
+      <p class="showall">Show All</p>
+        <button>Add New Album</button>
+      </section>
+      <hr>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="main-content">
+      <section class="newsfeed">
+        <h2>Newsfeed</h2>
+        <article class="post">
+          <div class="profile-info">
+            <img src="img/profile.avif" alt="User Profile">
+            <div class="user-details">
+          <h3>Doe</h3>
+          <h5>posted on 20th Oct</h5>
+          <h5>Edited Just now</h5></div>
+        </div>
+          <p>This is a sample post content about a project or story...</p>
+          <button>Expand</button>
+          <div><input type="text" placeholder="Write a command..."><button id="submitPost">Send</button></div>
+        </article> 
+
+        <article class="post">
+          <div class="profile-info">
+            <img src="img/profile.avif" alt="User Profile">
+            <div class="user-details">
+          <h3>John Durairaj</h3>
+          <h5>posted on 20th Oct</h5>
+          <h5>Edited Just now</h5></div>
+        </div>
+          <p>Another sample post content...
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam dolores doloribus,
+             perferendis assumenda amet id sunt ut temporibus vitae?
+          </p>
+          <button>Expand</button>
+          <div><input type="text" placeholder="Write a command..."><button id="submitPost">Send</button></div>
+        </article>
+
+        <article class="post">
+          <div class="profile-info">
+            <img src="img/profile.avif" alt="User Profile">
+            <div class="user-details">
+          <h3>Jane Smith</h3>
+          <h5>posted on 20th Oct</h5>
+          <h5>Edited Just now</h5></div>
+        </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam dolores doloribus,
+             perferendis assumenda amet id sunt ut temporibus vitae...
+          </p>
+          <button>Expand</button>
+          <div><input type="text" placeholder="Write a command..."><button id="submitPost">Send</button></div>
+        </article>
+      </section>
+
+      <section class="new-post">
+        <h2>Create a Post</h2>
+        <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+        <button id="submitPost">Post</button>
+      </section>
+    </section>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar right">
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <ol>
+              <li>New message from John Doe</li>
+              <li>Project "Movie Explorer" is due tomorrow</li>
+              <li>Reminder: Meeting at 5 PM</li>
+            </ol><p class="showall">Show All</p>
+          </section>
+          <hr>
+      <section class="tasks">
+        <h2>Tasks</h2>
+        <ul>
+          <li>Task 1 <div class="prog-bar"><div class="progress" style="width: 70%; background-color: brown;"></div></div></li>
+          <li>Task 3 <div class="prog-bar"><div class="progress" style="width: 90%; background-color: #475648;"><div></div></li>
+          <li>Task 2 <div class="prog-bar"><div class="progress" style="width: 40%; background-color: #e015dd;"></div></div></li>
+        </ul>
+        <p class="showall">Show All</p> 
+        
+     
+      </section><hr>
+    <section class="tasks"> 
+        <h2>To-DO</h2>
+        <h3>Note down the tasks.</h3>
+        <input type="text"><button>Add Task</button>
+        <p>Remember to Pay the Bill<input type="checkbox"></p>
+        <p>Complete the task<input type="checkbox"></p>
+        <p>go to market<input type="checkbox"></p>
+        <p>upload the documents<input type="checkbox"></p>
+        <p>Deploy the website<input type="checkbox"></p>
+        <p>finish the project within 3 days<input type="checkbox"></p>
+        <div class="page-btn">
+        <button><i class='bx bx-left-arrow-alt'></i>Previous</button><button>Next<i class='bx bx-right-arrow-alt'></i></button></div>
+    </section>
+      
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 MyApp. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
